@@ -3,6 +3,10 @@ This project consists of a server and some code for the client (Kindle v4) to di
 ## awattarapi.py 
 This fetches the api from Awattar every hour and creates a new png locally. In parallel, it can serve the PNG via Flask on `localhost:5000/awattar.png`.
 Sorry for having it in German, but adapting this to your own preference won't be too hard I assume.
+The script automatically applies the HOURLY tariff's markup plus VAT (MwSt). What is of course not included is your electricity provider's cost ("Netzkosten").
+
+### Example image
+![example image](awattar.png)
 
 ## Kindle folder
 This is a (not very clean) KUAL extension to display the above generated PNG. 
