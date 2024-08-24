@@ -1,5 +1,7 @@
 This project consists of a server and some code for the client (Kindle v4) to display the current [Awattar](https://www.awattar.at/services/charts/hourly) prices.
 
+This repository builds on the excellent work of https://github.com/x-magic/kindle-weather-stand-alone
+
 ## awattarapi.py 
 This fetches the api from Awattar every hour and creates a new png locally. In parallel, it can serve the PNG via Flask on `localhost:5000/awattar.png`.
 Sorry for having it in German, but adapting this to your own preference won't be too hard I assume.
